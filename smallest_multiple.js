@@ -14,7 +14,6 @@ module.exports = function( ceiling ) {
   var possibleProduct = productIncrement;  //ceiling might be first convergence point
   var isChosenFactor = false;
 
-  //for(var i = 0; i < 100; i++ ) {
   while( isChosenFactor === false ) { //testing if possibleProduct passes tests
     for( var testingFactor = ceiling - 1; testingFactor > 1; testingFactor-- ) {
       if( possibleProduct % testingFactor !== 0 ) {
